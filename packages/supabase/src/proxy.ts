@@ -24,8 +24,10 @@ export async function updateSession(request: NextRequest) {
     },
   });
 
-  // Do not run code between createServerClient and getUser(): a dropped
-  // call here can silently desync the session cookie from Supabase auth.
+  /*
+   * Do not run code between createServerClient and getUser().
+   * A dropped call here can silently desync the session cookie from Supabase auth.
+   */
   const {
     data: { user },
   } = await supabase.auth.getUser();

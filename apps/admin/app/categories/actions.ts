@@ -9,7 +9,9 @@ import { isUuid } from "@/lib/validation";
 const UNIQUE_VIOLATION = "23505";
 const FOREIGN_KEY_VIOLATION = "23503";
 
-// Mirrors the char_length check on categories.name in database/schema.sql.
+/*
+ * Mirrors the char_length check on categories.name in database/schema.sql.
+ */
 const MAX_NAME_LENGTH = 100;
 
 export type CategoryInput = {
@@ -29,8 +31,10 @@ type ParsedCategoryInput =
   | { ok: true; name: string; hasIngredients: boolean }
   | { ok: false; error: string };
 
-// Takes `unknown` on purpose: the CategoryInput annotation on the actions
-// below documents the intended shape, it does not enforce it at runtime.
+/*
+ * Takes unknown on purpose. The CategoryInput annotation on the actions
+ * below documents the intended shape but does not enforce it at runtime.
+ */
 function parseCategoryInput(input: unknown): ParsedCategoryInput {
   if (typeof input !== "object" || input === null) {
     return { ok: false, error: "Invalid category data." };
@@ -63,11 +67,13 @@ function parseCategoryInput(input: unknown): ParsedCategoryInput {
 }
 
 function revalidateCategoryReaders() {
-  // Revalidates every category-reading path this app (apps/admin) owns.
-  // The customer app's product listing reads categories from its own
-  // Next.js deployment and isn't reachable from here — it picks up the
-  // change on its own cache expiry, or needs a separate on-demand
-  // revalidation route if that lag becomes a problem later.
+  /*
+   * Revalidates every category-reading path this app (apps/admin) owns.
+   * The customer app's product listing reads categories from its own Next.js
+   * deployment and isn't reachable from here. It picks up the change on its
+   * own cache expiry, or needs a separate on-demand revalidation route if that
+   * lag becomes a problem later.
+   */
   revalidatePath("/categories");
   revalidatePath("/products");
 }
@@ -165,8 +171,10 @@ export async function deleteCategory(
 
   const supabase = await createClient();
 
-  // Preemptive check gives a nicer, count-specific message than parsing
-  // the FK violation after the fact.
+  /*
+   * Preemptive check gives a nicer, count-specific message than parsing
+   * the FK violation after the fact.
+   */
   const { count, error: countError } = await supabase
     .from("products")
     .select("id", { count: "exact", head: true })
@@ -193,9 +201,11 @@ export async function deleteCategory(
   const { error } = await supabase.from("categories").delete().eq("id", id);
 
   if (error) {
-    // Safety net for the (unlikely) race where a product is added between
-    // the count check above and this delete — the FK constraint is the
-    // real guard, not the precheck.
+    /*
+     * Safety net for the unlikely race where a product is added between
+     * the count check above and this delete. The FK constraint is the
+     * real guard, not the precheck.
+     */
     if (error.code === FOREIGN_KEY_VIOLATION) {
       return {
         success: false,

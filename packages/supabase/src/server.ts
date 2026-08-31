@@ -18,10 +18,9 @@ export async function createClient() {
           }
         } catch (error) {
           /*
-           * Usually benign: called from a Server Component, which can't set
-           * cookies, and the proxy refreshes the session on every request
-           * anyway. Always logged — if it ever fires for another reason,
-           * production is exactly where we need to see it.
+           * Usually benign. This is called from a Server Component, which can't
+           * set cookies. The proxy refreshes the session on every request anyway.
+           * Always logged so if it fires for another reason, we see it in production.
            */
           console.error(
             "Supabase: failed to set cookie from a Server Component",
