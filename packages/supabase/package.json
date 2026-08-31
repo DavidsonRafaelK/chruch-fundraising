@@ -6,7 +6,9 @@
   "exports": {
     "./client": "./src/client.ts",
     "./server": "./src/server.ts",
-    "./proxy": "./src/proxy.ts"
+    "./proxy": "./src/proxy.ts",
+    "./require-admin": "./src/require-admin.ts",
+    "./error": "./src/error.ts"
   },
   "scripts": {
     "lint": "biome check .",

@@ -1,4 +1,5 @@
 import { createServerClient } from "@supabase/ssr";
+import type { User } from "@supabase/supabase-js";
 import { type NextRequest, NextResponse } from "next/server";
 import { supabaseEnv } from "./env";
 
@@ -25,7 +26,9 @@ export async function updateSession(request: NextRequest) {
 
   // Do not run code between createServerClient and getUser(): a dropped
   // call here can silently desync the session cookie from Supabase auth.
-  await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
 
-  return proxyResponse;
+  return { response: proxyResponse, user: user as User | null };
 }
