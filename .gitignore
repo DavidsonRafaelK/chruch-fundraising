@@ -20,7 +20,10 @@ coverage
 .agents
 .turbo
 .idea
-database
+
+# Local dumps and scratch SQL, but the checked-in schema is tracked
+database/*
+!database/schema.sql
 
 # Vercel
 .vercel

@@ -353,9 +353,22 @@ create policy "admins read order items"
 -- on storage.objects. Public bucket: anyone can read (needed for
 -- the storefront to display images), only admins can write.
 -- ---------------------------------------------------------
-insert into storage.buckets (id, name, public)
-values ('product-images', 'product-images', true)
-    on conflict (id) do nothing;
+-- 5 MB / image-only. Upload is admin-only, so this is hardening rather than
+-- a hole being closed: it stops a public, unbounded bucket from being usable
+-- as arbitrary file hosting, and stops non-image files from being served
+-- straight back to browsers from a public URL.
+insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
+values (
+    'product-images',
+    'product-images',
+    true,
+    5242880,
+    array['image/jpeg', 'image/png', 'image/webp', 'image/avif']
+)
+    on conflict (id) do update
+    set public = excluded.public,
+        file_size_limit = excluded.file_size_limit,
+        allowed_mime_types = excluded.allowed_mime_types;
 
 create policy "public reads product images"
   on storage.objects for select
