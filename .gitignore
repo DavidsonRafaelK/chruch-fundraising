@@ -15,9 +15,12 @@ node_modules
 # Testing
 coverage
 
-# Turbo & jetbrains
+# Turbo & jetbrains & agents
+.claude
+.agents
 .turbo
 .idea
+database
 
 # Vercel
 .vercel
