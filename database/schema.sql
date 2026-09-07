@@ -390,3 +390,18 @@ create policy "admins delete product images"
   on storage.objects for delete
 to authenticated
   using (bucket_id = 'product-images' and public.is_admin());
+
+-- ---------------------------------------------------------
+-- 11. is_new COMPUTED COLUMN (PostgREST)
+-- Exposes is_new = (created_at within 14 days) on `products` selects
+-- (`select=*,is_new:products_is_new()`) so the catalog read layer never
+-- has to compare Date.now() in JS against created_at — avoids clock-skew
+-- and timezone drift between the app server and the database.
+-- ---------------------------------------------------------
+create or replace function public.products_is_new(p public.products)
+returns boolean
+language sql
+stable
+as $$
+  select p.created_at > now() - interval '14 days'
+$$;

@@ -8,7 +8,11 @@
     "./server": "./src/server.ts",
     "./proxy": "./src/proxy.ts",
     "./require-admin": "./src/require-admin.ts",
-    "./error": "./src/error.ts"
+    "./error": "./src/error.ts",
+    "./types": "./src/types.ts",
+    "./queries/products": "./src/queries/products.ts",
+    "./queries/categories": "./src/queries/categories.ts",
+    "./queries/orders": "./src/queries/orders.ts"
   },
   "scripts": {
     "lint": "biome check .",
