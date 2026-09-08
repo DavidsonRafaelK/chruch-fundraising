@@ -1,0 +1,4 @@
+[install]
+# Next.js copies external server packages (e.g. pg) out of node_modules, which
+# breaks Bun's default isolated symlink layout. Hoisted matches what Next expects.
+linker = "hoisted"
