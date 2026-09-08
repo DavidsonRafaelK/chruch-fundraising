@@ -1,0 +1,62 @@
+{
+  "web": {
+    "global": {
+      "primaryCta": "Reservar una llamada",
+      "secondaryCta": "Regístrate"
+    },
+    "header": {
+      "home": "Inicio",
+      "contact": "Contacto"
+    },
+    "home": {
+      "meta": {
+        "title": "Transforma las operaciones de tu negocio hoy",
+        "description": "En el mundo acelerado de hoy, tu negocio merece algo mejor que sistemas de comercio obsoletos. Nuestra plataforma innovadora simplifica las operaciones, reduce la complejidad y ayuda a las pequeñas empresas a prosperar en la economía moderna."
+      },
+      "hero": {
+        "announcement": "Lee nuestro último artículo"
+      },
+      "faq": {
+        "title": "Preguntas comunes, respuestas de expertos",
+        "description": "Obtén respuestas rápidas a tus preguntas más urgentes sobre nuestra plataforma. Hemos recopilado todo lo que necesitas saber sobre la transformación de las operaciones de tu negocio y cómo comenzar con soluciones comerciales modernas.",
+        "cta": "¿Tienes preguntas? Contáctanos"
+      }
+    },
+    "blog": {
+      "meta": {
+        "title": "Blog",
+        "description": "Pensamientos, ideas y opiniones."
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "Hablemos sobre tu negocio",
+        "description": "Programa una consulta con nuestro equipo para discutir cómo podemos ayudar a simplificar tus operaciones y fomentar el crecimiento de tu negocio."
+      },
+      "hero": {
+        "benefits": [
+          {
+            "title": "Consulta personalizada",
+            "description": "Obtén soluciones a medida y asesoramiento experto específico para las necesidades de tu negocio."
+          },
+          {
+            "title": "Integración sin problemas",
+            "description": "Nos integramos sin problemas con tus sistemas existentes para asegurar una transición suave y una mínima interrupción."
+          },
+          {
+            "title": "Orientación experta",
+            "description": "Nuestro equipo de expertos te guiará a través del proceso, asegurando que obtengas el máximo provecho de nuestra plataforma."
+          }
+        ],
+        "form": {
+          "title": "Reservar una reunión",
+          "date": "Fecha",
+          "firstName": "Nombre",
+          "lastName": "Apellido",
+          "resume": "Subir currículum",
+          "cta": "Reservar la reunión"
+        }
+      }
+    }
+  }
+}

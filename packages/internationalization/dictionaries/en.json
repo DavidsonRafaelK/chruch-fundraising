@@ -1,0 +1,62 @@
+{
+  "web": {
+    "global": {
+      "primaryCta": "Book a call",
+      "secondaryCta": "Sign up"
+    },
+    "header": {
+      "home": "Home",
+      "contact": "Contact"
+    },
+    "home": {
+      "meta": {
+        "title": "Transform Your Business Operations Today",
+        "description": "In today's fast-paced world, your business deserves better than outdated trading systems. Our innovative platform streamlines operations, reduces complexity, and helps small businesses thrive in the modern economy."
+      },
+      "hero": {
+        "announcement": "Read our latest article"
+      },
+      "faq": {
+        "title": "Common Questions, Expert Answers",
+        "description": "Get quick answers to your most pressing questions about our platform. We've compiled everything you need to know about transforming your business operations and getting started with modern trading solutions.",
+        "cta": "Any questions? Reach out"
+      }
+    },
+    "blog": {
+      "meta": {
+        "title": "Blog",
+        "description": "Thoughts, ideas, and opinions."
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "Let's Talk About Your Business",
+        "description": "Schedule a consultation with our team to discuss how we can help streamline your operations and drive growth for your business."
+      },
+      "hero": {
+        "benefits": [
+          {
+            "title": "Personalized Consultation",
+            "description": "Get tailored solutions and expert advice specific to your business needs."
+          },
+          {
+            "title": "Seamless Integration",
+            "description": "We seamlessly integrate with your existing systems to ensure a smooth transition and minimal disruption."
+          },
+          {
+            "title": "Expert Guidance",
+            "description": "Our team of experts will guide you through the process, ensuring you get the most out of our platform."
+          }
+        ],
+        "form": {
+          "title": "Book a meeting",
+          "date": "Date",
+          "firstName": "First name",
+          "lastName": "Last name",
+          "resume": "Upload resume",
+          "cta": "Book the meeting"
+        }
+      }
+    }
+  }
+}

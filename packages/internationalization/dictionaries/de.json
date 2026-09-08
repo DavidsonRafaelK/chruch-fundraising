@@ -1,0 +1,62 @@
+{
+  "web": {
+    "global": {
+      "primaryCta": "Vereinbaren Sie einen Anruf",
+      "secondaryCta": "Anmelden"
+    },
+    "header": {
+      "home": "Startseite",
+      "contact": "Kontakt"
+    },
+    "home": {
+      "meta": {
+        "title": "Transformieren Sie Ihre Geschäftsabläufe noch heute",
+        "description": "In der heutigen schnelllebigen Welt verdient Ihr Unternehmen mehr als veraltete Handelssysteme. Unsere innovative Plattform optimiert die Abläufe, reduziert die Komplexität und hilft kleinen Unternehmen, in der modernen Wirtschaft erfolgreich zu sein."
+      },
+      "hero": {
+        "announcement": "Lesen Sie unseren neuesten Artikel"
+      },
+      "faq": {
+        "title": "Häufige Fragen, Expertenantworten",
+        "description": "Erhalten Sie schnelle Antworten auf Ihre dringendsten Fragen zu unserer Plattform. Wir haben alles zusammengestellt, was Sie über die Transformation Ihrer Geschäftsabläufe und den Einstieg in moderne Handelslösungen wissen müssen.",
+        "cta": "Haben Sie Fragen? Kontaktieren Sie uns"
+      }
+    },
+    "blog": {
+      "meta": {
+        "title": "Blog",
+        "description": "Gedanken, Ideen und Meinungen."
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "Lassen Sie uns über Ihr Unternehmen sprechen",
+        "description": "Vereinbaren Sie einen Termin mit unserem Team, um zu besprechen, wie wir Ihre Abläufe optimieren und das Wachstum Ihres Unternehmens vorantreiben können."
+      },
+      "hero": {
+        "benefits": [
+          {
+            "title": "Personalisierte Beratung",
+            "description": "Erhalten Sie maßgeschneiderte Lösungen und Expertenrat, die auf die Bedürfnisse Ihres Unternehmens zugeschnitten sind."
+          },
+          {
+            "title": "Nahtlose Integration",
+            "description": "Wir integrieren uns nahtlos in Ihre bestehenden Systeme, um einen reibungslosen Übergang und minimale Störungen zu gewährleisten."
+          },
+          {
+            "title": "Expertenrat",
+            "description": "Unser Expertenteam wird Sie durch den Prozess führen und sicherstellen, dass Sie das Beste aus unserer Plattform herausholen."
+          }
+        ],
+        "form": {
+          "title": "Vereinbaren Sie ein Treffen",
+          "date": "Datum",
+          "firstName": "Vorname",
+          "lastName": "Nachname",
+          "resume": "Lebenslauf hochladen",
+          "cta": "Buchen Sie das Treffen"
+        }
+      }
+    }
+  }
+}

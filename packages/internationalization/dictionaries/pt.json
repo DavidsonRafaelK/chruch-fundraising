@@ -1,0 +1,62 @@
+{
+  "web": {
+    "global": {
+      "primaryCta": "Agende uma chamada",
+      "secondaryCta": "Inscreva-se"
+    },
+    "header": {
+      "home": "Início",
+      "contact": "Contato"
+    },
+    "home": {
+      "meta": {
+        "title": "Transforme as Operações da Sua Empresa Hoje",
+        "description": "No mundo acelerado de hoje, sua empresa merece mais do que sistemas de negociação ultrapassados. Nossa plataforma inovadora simplifica operações, reduz a complexidade e ajuda pequenas empresas a prosperar na economia moderna."
+      },
+      "hero": {
+        "announcement": "Leia nosso último artigo"
+      },
+      "faq": {
+        "title": "Perguntas Comuns, Respostas de Especialistas",
+        "description": "Obtenha respostas rápidas para suas perguntas mais urgentes sobre nossa plataforma. Compilamos tudo o que você precisa saber sobre como transformar suas operações comerciais e começar com soluções de negociação modernas.",
+        "cta": "Alguma dúvida? Entre em contato"
+      }
+    },
+    "blog": {
+      "meta": {
+        "title": "Blog",
+        "description": "Pensamentos, ideias e opiniões."
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "Vamos Falar Sobre Seu Negócio",
+        "description": "Agende uma consulta com nossa equipe para discutir como podemos ajudar a simplificar suas operações e impulsionar o crescimento da sua empresa."
+      },
+      "hero": {
+        "benefits": [
+          {
+            "title": "Consulta Personalizada",
+            "description": "Obtenha soluções personalizadas e conselhos de especialistas específicos para as necessidades da sua empresa."
+          },
+          {
+            "title": "Integração Sem Costura",
+            "description": "Integramos perfeitamente com seus sistemas existentes para garantir uma transição suave e mínima interrupção."
+          },
+          {
+            "title": "Orientação Especializada",
+            "description": "Nossa equipe de especialistas irá guiá-lo durante o processo, garantindo que você aproveite ao máximo nossa plataforma."
+          }
+        ],
+        "form": {
+          "title": "Agende uma reunião",
+          "date": "Data",
+          "firstName": "Primeiro nome",
+          "lastName": "Último nome",
+          "resume": "Carregar currículo",
+          "cta": "Agende a reunião"
+        }
+      }
+    }
+  }
+}
