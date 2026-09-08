@@ -35,7 +35,7 @@
     "@repo/typescript-config": "*",
     "@types/node": "25.3.5",
     "@types/react": "19.2.14",
-    "@types/react-dom": "19.2.3",
+    "@types/react-dom": "19.2.7",
     "@vitejs/plugin-react": "^5.1.4",
     "concurrently": "^9.2.1",
     "typescript": "^5.9.3",
